@@ -1,0 +1,108 @@
+@font-face {
+    font-family: silk;
+    src: url("/silk-serif/Silk\ Serif\ Regular.otf Serif\ Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: geek;
+    src: url("/geek/geek.ttf") format("opentype");
+}
+@font-face {
+    font-family: laviossa;
+    src: url("/laviossa/Laviossa-Medium.otf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    /* --bb:#DF2935; */
+    /* --bb:#EFF2C0; */
+    --bg:#C9DDFF;
+    --bb:#FF715B;
+}
+body {
+    background:var(--bg);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+#divtoshow {
+    position:absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+#divtoshow img {
+    height: 20vh;
+}
+#onme {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.container-line {
+    display: inline-flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid var(--bb);
+}
+.left-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 40%;
+    width: 10%;
+}
+.left-line span {
+    font-size: 1.8vw;
+    font-family: geek;
+    color: var(--bb);
+}
+.project-line {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+}
+.project-line p a{
+    overflow: hidden;
+    font-family: silk;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: var(--bb);
+}
+.items_date-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 80%;
+    width: 25%;
+    /* background: rgb(132, 0, 255); */
+}
+.items_date-line span {
+    font-size: 1vw;
+    font-family: laviossa;
+    color: var(--bb);
+}
+.right-line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 80%;
+    width: 5%;
+    /* background: rgb(102, 255, 0); */
+}
+.right-line svg {
+    height: 20px;
+    fill: var(--bb);
+}
